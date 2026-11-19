@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- header starts -->
+      <div class="header text-center py-4">
+        <h3 class="header-title">
+          <img src="assets/weather-icon.png" alt="icon" class="icon-img" />
+          Weather App
+        </h3>
+      </div>
+    </div>
+    <!-- header ends -->
+
+    <!-- input box starts-->
+    <div class="container">
+      <div class="weather-input mt-2">
+        <input
+          type="text"
+          placeholder="Enter city name (Eg:chennai)"
+          class="input-box"
+        />
+        <button class="search-btn">Search</button>
+      </div>
+
+      <div class="error-msg text-center mt-3">
+        <span class="error d-none">invalid city</span>
+      </div>
+    </div>
+    <!-- input box ends-->
+
+    <!-- card starts-->
+    <div class="container mt-5 mb-4">
+      <div class="card py-4">
+        <!-- card header -->
+        <div class="card-header">
+          <h3 class="city-name">Loaction</h3>
+          <p class="city-details">Country</p>
+        </div>
+
+        <!-- card body  -->
+        <div class="card-body row">
+          <div class="col-12 col-md-6 text-center">
+            <div class="climate-img">
+              <img src="assets/weather-icon.png" alt="climate " />
+            </div>
+            <div class="climate">
+              <h4 class="climate-condition">Clear sky</h4>
+              <p class="climate-info">Updated few minutes ago</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 text-center mt-4 mt-md-0">
+            <h1><span class="degree">0°</span><span>c</span></h1>
+            <p class="deg-info">Feels like <span class="sub-deg">0°</span>c</p>
+
+            <div class="climate-changes mt-5">
+              <div class="increment">
+                <i class="bi bi-arrow-up"></i>
+                <span class="max-degree">0°c</span>
+              </div>
+              <div class="decrement">
+                <i class="bi bi-arrow-down"></i>
+                <span class="min-degree">0°c</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-footer -->
+        <div class="card-footer">
+          <div class="container">
+            <div class="row text-center">
+              <!-- humidity col -->
+              <div class="col-12 col-sm-3">
+                <div class="humidity-box box">
+                  <div class="humidity-icon icon">
+                    <i class="bi bi-droplet-half"></i>
+                  </div>
+                  <div class="humidity-info info-box">
+                    <span class="humidity-title name">Humidity</span>
+                    <h3 class="humidity-level level">0%</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- wind speed col -->
+              <div class="col-12 col-sm-3">
+                <div class="windspeed-box box">
+                  <div class="windspee d-icon icon">
+                    <i class="bi bi-wind"></i>
+                  </div>
+                  <div class="windspeed-info">
+                    <span class="windspeed-title name">Windspeed</span>
+                    <h3 class="windspeed-level level">0 km/hr</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pressure col -->
+              <div class="col-12 col-sm-3">
+                <div class="pressure-box box">
+                  <div class="pressure-icon icon">
+                    <i class="bi bi-speedometer2"></i>
+                  </div>
+                  <div class="pressure-info">
+                    <span class="pressure-title name">Pressure</span>
+                    <h3 class="pressure-level level">0 pha</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- visibility col -->
+              <div class="col-12 col-sm-3">
+                <div class="visibility-box box">
+                  <div class="visibility-icon icon">
+                    <i class="bi bi-eye"></i>
+                  </div>
+                  <div class="visibility-info">
+                    <span class="visibility-title name">Visibility</span>
+                    <h3 class="visibility-level level">0 km</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--card ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

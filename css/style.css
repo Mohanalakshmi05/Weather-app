@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --bg:#09152D;
+    --card:#12264A;
+    --input:#162A4D;
+    --primary:#2D8CFF;
+    --primary-hover:#1D7FFF;
+    --white:#FFFFFF;
+    --text:#D8E4F8;
+    --muted:#8EA2C9;
+    --border:#28466D;
+    --forecast:#16284A;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: var(--bg);
+    color: white;
+    overflow-x: hidden;
+}
+
+.icon-img{
+    width: 50px;
+}
+
+.header-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* input box */
+.weather-input{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-box{
+    flex: 4;
+    padding: 10px 35px 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 12px 0 0 12px;
+    background-color: var(--input);
+    color: white;
+    border: 1px solid #294B7A;
+    box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+
+.input-box:placeholder{
+    color: #7E91B3;
+}
+.search-btn{
+    flex: 1;
+    padding: .3rem 1rem;
+    border-radius: 0 12px 12px 0;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    font-weight: 500;
+    transition: .2s linear;
+    box-shadow: 0 8px 20px rgba(45,140,255,.35);
+}
+
+.search-btn:hover{
+    background-color: #176bd8;
+}
+
+
+/* card */
+.card{
+    background-color: var(--card);
+    color: white;
+    max-width: 100%;
+    width: 700px;
+    margin: 0 auto;
+    box-shadow:0 10px 30px rgba(0,0,0,.25),
+                0 0 20px rgba(45,140,255,.08);
+}
+.card-header{
+    margin-left: 1rem;
+    border-bottom: none;
+}
+.card-header h3{
+    font-size: 1.7rem;
+}
+.card-header p{
+    font-size: 1rem;
+}
+
+.city-details{
+    color: var(--muted);
+}
+
+.climate-img img{
+    width: 150px;
+    margin: 0 auto;
+    margin-left: 40px;
+}
+
+.climate-condition{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.climate-info{
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.climate-changes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.increment{
+    padding-right: 15px;
+    border-right: 2px solid white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.increment i{color: red;}
+.decrement i{color: var(--primary)   ;}
+.decrement{
+    padding-left: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.degree{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.degree span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.deg-info{
+    font-size: 1.2rem;
+    color: var(--muted);
+}
+
+.deg-info span{
+    color: var(--primary);
+}
+
+.card-footer{
+    border-top: none;
+    
+}
+
+.card-footer .container{
+    background-color: var(--input);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.icon{margin-right: 15px;}
+
+.box .icon i{
+    font-size: 1.5rem;
+}
+
+.name{
+    color: var(--muted);
+    font-size: .9rem;
+} 
+
+.level{
+    margin-top: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-self: flex-start;
+}
+
+.error{
+    color: red;
+}
